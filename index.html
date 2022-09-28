@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+  
+    <title>Restaurant design</title>
+</head>
+<body>
+
+    <div class="tabs">
+
+         <div class="tab-header">
+
+            <div class="active">
+                <img src="img/accueil.png" width="40" alt="">
+                <span>accueil</span>
+            </div>
+            <div>
+                <img src="img/commande.png" width="40" alt="">
+                <span>commandes</span>
+            </div>
+            <div>
+                <img src="img/stock.png" width="40" alt="">
+                <span>stock</span>
+            </div>
+            <div>
+                <img src="img/chat.png" width="40" alt="">
+                <span>chat</span>
+            </div>
+         </div>
+
+         <div class="tab-indicator"></div>
+
+         <div class="tab-content">
+
+          <div class="active">
+            
+            <h2>Vous êtes dans l'espace du cuisinier</h2><!--digital clock start-->
+            <section class="container">
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+                <span id="session">AM</span>
+            </section>
+            <!--digital clock end-->
+
+
+         </div> 
+         
+         <div>
+            <h2>Toutes les commandes</h2>
+            <table>
+                 <thead>
+                 <tr>
+                   <th scope="col">Table</th>
+                   <th scope="col">Article(s)</th>
+                  
+                   <th scope="col">Quantité</th>
+                   <th scope="col">Temps</th>
+                   <!-- <th scope="col">Actions</th> -->
+                </tr>
+                </thead>
+                 <tbody>
+                    <tr>
+                     <td>Table 1</td>
+                      <td>Pizza, riz, soja</td>
+                      <!-- <td>En Stock</td> -->
+                      <td>1</td>
+                      <td>30s</td>
+                      <!-- <td>$30.02</td> -->
+                    </tr>
+                     <td>Table 2</td>
+                      <td>Pizza</td>
+                      <!-- <td>En Stock</td> -->
+                      <td>3</td>
+                      <td>2 mins</td>
+                      <!-- <td>$30.02</td> -->
+                    </tr>
+            </table>
+          </div>
+
+          
+          <div>
+            <h2>Tous les stocks</h2>
+              <table>
+                <thead>
+                    <tr>
+                      <th scope="col">Article(s)</th>
+                      <th scope="col">Catégorie</th>
+                      <th scope="col">Quantité</th>
+                      <th scope="col">Actions</th>
+                   </tr>
+                   </thead>
+
+                   <tbody>
+                      <tr>
+                        <td>Pizza 3 cm</td>
+                        <td>Pizza</td>
+                        <td>3</td>
+                        <td><a href="modif.html">Modifier</a></td>
+                      </tr>
+                   </tbody>
+              </table>
+          </div>
+  
+       
+          <div>
+            <!-- <h2>Espace de chat</h2> -->
+
+            <section class="twinger">
+                
+                <section class="title">
+                   <img src="img/gerante.png" style="margin-left: -12rem; margin-top:2rem" width="40" alt=""> 
+                    Madame Koffi Gérante
+                <section class="box">
+                    <section class="item">
+                      
+                        <!-- <section class="msg">
+                            <p>Hello everyone, How are you?</p>
+                        </section> -->
+                    </section>
+                    <br clear="both">
+                    <section class="item right">
+                        <!-- <section class="msg">
+                            <p>Nice</p>
+                        </section> -->
+                    </section>
+                </section>
+                    
+                    <section class="typing-area">
+                        <section class="input-field">
+                            <input type="text" placeholder="Entrez votre message ici" required>
+                            <button>Envoyer</button>
+                        </section>
+                    </section>
+                </section>
+           
+          </div>
+
+         </div>
+    </div>
+    
+
+   <script type="text/javascript">
+    function displayTime(){
+    var dateTime = new Date();
+    var hrs = dateTime.getHours();
+    var min = dateTime.getMinutes();
+    var sec = dateTime.getSeconds();
+    var session = document.getElementById('session');
+
+    if(hrs >= 12){
+        session.innerHTML = 'PM';
+    }else{
+        session.innerHTML = 'AM';
+    }
+
+    if(hrs > 12){
+        hrs = hrs - 12;
+    }
+
+    document.getElementById('hours').innerHTML = hrs;
+    document.getElementById('minutes').innerHTML = min;
+    document.getElementById('seconds').innerHTML = sec;
+}
+setInterval(displayTime, 10);
+   </script>
+    <script type = text/javascript src="js/index.js"></script> 
+    
+    
+</body>
+</html>

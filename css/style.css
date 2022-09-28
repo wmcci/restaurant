@@ -1,0 +1,367 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: brown;
+    font-family: "Raleway";
+}
+
+.tabs{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    width: 880px;
+    height: 560px;
+    padding: 30px 20px;
+    /* box-shadow: 5px 5px 10px #ccc; */
+    background: #f5f5f5;
+    overflow: hidden;
+    -webkit-transform:  translate(-50%, -50%);
+    -moz-transform:  translate(-50%, -50%);
+    -ms-transform:  translate(-50%, -50%);
+    -o-transform:  translate(-50%, -50%);
+}
+
+
+
+.tabs .tab-header {
+    float: left;
+    width: 180px;
+    height: 100%;
+    border:  1px solid #ccc;
+    padding: 40px 6px;
+}
+
+.tabs .tab-header > div {
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-left: 10px;
+
+    CCn,_g=Ar-sW
+   
+}
+
+
+.tabs .tab-header > div:hover,
+.tabs .tab-header > div.active{
+    color: brown;
+
+}
+
+
+.tabs .tab-header div img {
+  
+  margin: -14px 2px; 
+  position: relative;
+  top: -3%;
+  /* border: 1px solid red;   */
+}
+
+/* .tabs .tab-header div span {
+display: inline-block;
+position: relative;
+left: -65px;
+bottom: -2px;
+} */
+
+
+.tabs .tab-content{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.tabs .tab-content > div{
+    position: absolute;
+    text-align: center;
+    padding: 40px 20px;
+    top: -200%;
+    transition: all 500ms ease-in-out ;
+    -webkit-transition: all 500ms ease-in-out ;
+    -moz-transition: all 500ms ease-in-out ;
+    -ms-transition: all 500ms ease-in-out ;
+    -o-transition: all 500ms ease-in-out ;
+}
+
+.tabs .tab-content > div.active{
+ top:0px;
+}
+
+
+.tabs .tab-indicator{
+    position: absolute;
+    width: 4px;
+    height: 50px;
+    background: brown;
+    left: 198px;
+    top: 80px;
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+}
+
+
+/* Design a table section */
+
+table {
+    border-collapse: collapse;
+}
+
+thead {
+  background: #411610;
+  color: #fff;
+}
+
+
+th,td 
+    {
+    border: 2px solid #c6c7cc;
+    padding: 10px 15px;
+}
+
+
+/* design a post modal */
+
+.modal-wrapper{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-wrapper-display{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal{
+    width: 28rem;
+    background-color: white;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    display: none;
+    transform: translate(-50%, -50%);
+    border-radius: 1.5rem;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+}
+
+.modal-header{
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    align-items: center;
+    border-bottom:0.1rem solid #eee;
+}
+
+
+.modal-header i{
+    font-size:  2.3rem;
+    color: #1aa1f5;
+    cursor: pointer;
+}
+
+.modal-header button{
+    margin-left: auto;
+    width: 7rem;
+    padding: 0.8rem;
+    background-color: #1aa1f5 ;
+    font-size: 1rem;
+    border: .1rem solid #1aa1f5;
+    border-radius: 3rem;
+    opacity: 0.5;
+    color: #fff;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+}
+
+
+.modal-body{
+    display: flex;
+    padding: 2rem 1.5rem 1rem 1.5rem;
+
+}
+
+.modal-img{
+    width: 4rem;
+    height: 4rem;
+    margin-right:  1.5rem;
+}
+
+
+.modal-img img{
+    width: 4rem;
+    height: 4rem;
+    margin-right:  1.5rem;
+}
+
+.modal-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.modal-input{
+    width: 5rem;
+}
+
+
+
+/* Date time design */
+  
+.container{
+    font-family: "Arial", Helvetica, sans-serif;
+    padding: 30px;
+    color:black;
+    font-weight: bold;
+ 
+    font-size: 5rem;
+    white-space: nowrap;
+}
+
+
+/* design chat system */
+
+.twinger {
+    width: 570px;
+}
+
+.twinger .title {
+    background: brown;
+    color: white;
+    line-height: 2.5;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+}
+
+
+/* .twinger .title p {
+   margin-top: -2rem;
+} */
+
+.twinger .box {
+    border: 1px solid #efefef;
+    padding: 10px 15px;
+    min-height: 200px;
+    max-height: 200px;
+}
+
+.twinger .box .item {
+    display: flex;
+    float: left;
+    margin: 10px 0;
+}
+
+.twinger .box .item .icon {
+    background: #007bff;
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.twinger .box .item .msg {
+    background: #007bff;
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+    margin-left: 10px;
+}
+
+.twinger .box .item .msg p {
+    padding: 10px;
+}
+
+.twinger .box .item.right {
+    float: right;
+}
+
+.twinger .box .item.right .msg {
+    background: #efefef;
+    color: #333;
+}
+
+.twinger .typing-area {
+    width: 100%;
+    background: #efefef;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.twinger .typing-area .input-field {
+    width: 100%;
+    position: relative;
+}
+
+.twinger .typing-area .input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    outline: none;
+    padding-right: 70px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s all ease;
+}
+
+.twinger .typing-area .input-field input:focus {
+    border-color: #007bff;
+}
+
+.twinger .typing-area .input-field button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: red;
+    border: 1px solid #007bff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s all ease;
+}
+
+.twinger .typing-area .input-field button:hover {
+    background: brown;
+    color: white;
+}
+
+.twinger .typing-area .input-field input:valid ~ button {
+    opacity: 1;
+    pointer-events: auto;
+}

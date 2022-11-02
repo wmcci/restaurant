@@ -14,15 +14,17 @@
     <div class="title">
       Modification du stock d'un produit
     </div>
-    <div class="form">
+
+    <form action="">
+      <div class="form">
       <div class="inputfield">
         <label>Nom Article</label>
-        <input type="text" class="input">
+        <input type="text" class="input" required="required">
       </div>
       <div class="inputfield">
         <label>Catégorie Article</label>
         <div class="custom_select">
-          <select>
+          <select required>
             <option value="">Selectionner</option>
             <option value="male">Riz</option>
             <option value="female">Poulet</option>
@@ -32,12 +34,14 @@
       </div>
       <div class="inputfield">
         <label>Stock du produit</label>
-        <input type="number" class="input">
+        <input type="number" class="input" required="required">
       </div>
       <div class="inputfield">
         <input type="submit" value="Modifier" class="btn">
       </div>
-    </div>
+      </div>
+
+    </form>
   </div>
 </body>
 

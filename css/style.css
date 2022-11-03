@@ -459,6 +459,17 @@ th,td
 }
 
 
+#middle{
+
+    margin: 12rem 6rem;
+}
+
+
+/* .all__menu{
+  margin: 12rem 6rem;
+} */
+
+
 .card-top {
     display: flex;
     margin: 5px 0;

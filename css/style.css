@@ -276,7 +276,7 @@ td{
 
 .twinger {
     width: 570px;
-    margin: 5rem 14rem;
+    margin: 5rem 8rem;
 }
 
 .twinger .title {
@@ -568,3 +568,5 @@ td{
 .item-card-menu:hover img {
     transform: scale(1.2);
 }
+
+/* Responsive design */
